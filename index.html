@@ -9,9 +9,55 @@
 <body>
     <div class="left">
         <div class="logo-container">
+            Squashed Ricky
         </div>
     </div>
 
-    <div class="form"></div>
+    <div class="form-container">
+        <div><h1>The churros page signup</h1></div>
+        <div class="enjoying">enjoying life one churro at a time</div>
+        <form action="" method="post">
+            <ul>
+            <li>
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Ricardo">
+            </li>
+
+            <li>
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Fort" >
+            </li>
+
+            <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ricardo@email.com" >
+            </li>
+        
+            <li>
+                <label for="phone-number">Phone number</label>
+                <input type="tel" name="phone-number" id="phone-number">
+            </li>
+
+            <li>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                 title="At least one uppercase character, one lowercase character and one number" required>
+                <div class="error"></div>
+            </li>
+
+            <li>
+                <label for="confirm-password">Confirm your password</label>
+                <input type="password" name="confirm-password" id="confirm-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                title="At least one uppercase character, one lowercase character and one number" required>
+                <div class="error"></div>
+            </li>
+            <fieldset>
+                <li><button type="submit">Create account</button></li>
+                <div class="log-in">Or <a href="">Log in</a> if you already have an account.</div>
+            </fieldset>
+            </ul>
+        </form>
+
+    </div>
 </body>
 </html>

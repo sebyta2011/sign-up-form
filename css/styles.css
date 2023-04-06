@@ -1,15 +1,46 @@
 body, html {
     display:flex;
     height: 100%;
+    width: 100%;
     margin: 0;
 }
 
 body {
     background-image: url("ricky-churro.png");
-    background-size: 50% 100%;
+    background-size: 40% 100%;
     background-repeat: no-repeat;
     
     background-color: rgb(109, 54, 2);
+}
+
+@font-face {
+    font-family: ricky-font;
+    src: url(/home/seba/repos/sign-up-form/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf)
+}
+
+
+input,
+textarea,
+select,
+button {
+  width: 300px;
+  height: 3em;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+label {
+    display:block;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+ul {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .left {
@@ -18,11 +49,114 @@ body {
 }
 
 .logo-container {
+    font-family: ricky-font;
     background-color: rgb(60, 59, 71);
+    color:rgb(172, 132, 25);
+    font-size: 40px;
     opacity: 70%;
     height: 10vh;
-    width: 50vw;
+    width: 40vw;
     margin: 0;
-    align-content: center;
     display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    color:rgb(64, 160, 204);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 60vw;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.enjoying {
+    font-style: italic;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 70px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+input {
+    border-radius: 10px;
+    border-color: rgb(39, 151, 151);
+    border-width: 2px;
+    box-shadow: none;
+}
+
+input:focus {
+    /* border-color:rgb(21, 195, 201);
+    border-width: 4px; */
+    border:none;
+    box-shadow: 2px 2px 2px 2px rgb(21, 195, 201);
+}
+
+#password:invalid + div:after, #confirm-password:invalid + div:after {
+    color:red;
+    content: "*At least 8 characters, one special/number character and one uppercase."
+}
+
+input:invalid {
+    border-color: red;
+    border-width: 4px;
+}
+
+.error {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 300px
+}
+
+fieldset{
+    border-width: 3px;
+    border-color: rgb(107, 55, 2);
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    width: 100%;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:active {
+    color:aqua
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 10rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(white, rgb(48, 181, 190));
+}
+
+button:hover {
+    background: linear-gradient(rgb(48, 181, 190), white);
+}
+
+button:active {
+    background: rgb(14, 132, 136);
+    transition: 0.3s;
+}
+
+.log-in {
+    margin-top: 30px;
 }
