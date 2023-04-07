@@ -63,6 +63,10 @@ ul {
     flex-wrap: wrap;
 }
 
+.logo {
+    margin-right: 30px;
+}
+
 .form-container {
     color:rgb(64, 160, 204);
     display:flex;
@@ -100,8 +104,6 @@ input {
 }
 
 input:focus {
-    /* border-color:rgb(21, 195, 201);
-    border-width: 4px; */
     border:none;
     box-shadow: 2px 2px 2px 2px rgb(21, 195, 201);
 }
